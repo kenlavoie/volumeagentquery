@@ -33,7 +33,7 @@ i = 0
 
 def superloop(): 
     ti = str(time.time() * 1000) 
-    savepath = 'savepath = /root/second1000out'
+    savepath = '/root/second1000out/'
     filename = '{}second1000out.json'.format(ti) 
     second1kfile = os.path.join(savepath, filename)
 
