@@ -33,7 +33,7 @@ i = 0
 
 def superloop(): 
     ti = str(time.time() * 1000) 
-    savepath = 'savepath = /root/fifth1000out'
+    savepath = '/root/fifth1000out'
     filename = '{}fifth1000outdelay.json'.format(ti) 
     fifth1kfile = os.path.join(savepath, filename)
 
