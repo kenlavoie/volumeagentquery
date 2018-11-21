@@ -34,7 +34,7 @@ i = 0
 
 def superloop(): 
     ti = str(time.time() * 1000) 
-    savepath = 'savepath = /root/first1000out'
+    savepath = '/root/first1000out'
     filename = '{}first1000out.json'.format(ti) 
     first1kfile = os.path.join(savepath, filename)
 
@@ -57,7 +57,7 @@ def superloop():
                 agentid = list0_100.pop()
                 filter = "agent.id = %s" % agentid
                 res = client.get_data(metrics, start, end, sampling, filter = filter)  
-                with open(filename, 'w+') as outfile: 
+                with open(first1kfile, 'w+') as outfile: 
                     json.dump(res, outfile)
         except: 
             pass 
