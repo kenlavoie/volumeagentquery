@@ -11,7 +11,7 @@ sysdig_url = os.environ["SYSDIGURL"]
 client = SdMonitorClient(api_token, sdc_url= sysdig_url, ssl_verify=True)
 
 
-apiurl = 'https://a1061eb84e93911e8ba53124f7ae6446-1604746915.us-east-1.elb.amazonaws.com/api/agents/connected?_product=SDC' 
+apiurl = 'sysdig_url + /api/agents/connected?_product=SDC' 
 headers = {'Authorization': 'Bearer ' + api_token, 'Content-Type': 'application/json'}
 
 
