@@ -34,7 +34,7 @@ i = 0
 
 def superloop(): 
     ti = str(time.time() * 1000) 
-    savepath = '/root/first1000out'
+    savepath = '/root/first1000out/'
     filename = '{}first1000out.json'.format(ti) 
     first1kfile = os.path.join(savepath, filename)
 
