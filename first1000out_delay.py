@@ -32,7 +32,7 @@ i = 0
 def superloop(): 
     ti = str(time.time() * 1000) 
     filename = '{}first1000outdelay.json'.format(ti)     
-    savepath = '/root/first1000out'
+    savepath = '/root/first1000out/'
     fifth1kfile = os.path.join(savepath, filename)
     def batch1():  
 
